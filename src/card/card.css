@@ -1,0 +1,81 @@
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  box-sizing: border-box;
+  padding: 5px;
+  width: 120px;
+  height: 180px;
+  border: 2px solid black;
+  font-size: 24px;
+  font-weight: bold;
+  background-color: white;
+  transition: 400ms;
+  position: absolute;
+}
+
+.card__value {
+  display: flex;
+  flex-direction: column;
+  width: fit-content;
+  gap: 4px;
+}
+
+.card__center {
+  width: 106px;
+  height: 62px;
+}
+
+.card__hearts,
+.card__spades,
+.card__diamonds,
+.card__clubs,
+.card__rank {
+  width: 24px;
+  height: 24px;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.card__rank {
+  text-align: center;
+}
+
+.card__hearts,
+.card__center--hearts {
+  background-image: url('../icons/heart.svg');
+}
+
+.card__spades,
+.card__center--spades {
+  background-image: url('../icons/spade.svg');
+}
+
+.card__diamonds,
+.card__center--diamonds {
+  background-image: url('../icons/diamond.svg');
+}
+
+.card__clubs,
+.card__center--clubs {
+  background-image: url('../icons/clubs.svg');
+}
+
+.card__center--hearts,
+.card__center--spades,
+.card__center--diamonds,
+.card__center--clubs {
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+
+.card--hearts,
+.card--diamonds {
+  color: red;
+}
+
+.bottom {
+  transform: rotate(180deg);
+  align-self: end;
+}

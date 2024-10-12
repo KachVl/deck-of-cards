@@ -1,0 +1,14 @@
+.deck {
+  width: 120px;
+  height: 180px;
+  position: relative;
+}
+
+.cardBack {
+  width: 100%;
+  height: 100%;
+  background-color: white;
+  background-image: url(../icons/cardBack.svg);
+  background-size: contain;
+  position: absolute;
+}
