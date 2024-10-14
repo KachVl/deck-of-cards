@@ -1,6 +1,7 @@
 import './field.css';
 import { Deck } from '../deck/deck';
 import { useState } from 'react';
+import { Button } from '../button/button';
 
 export const Field = ({deck, setDeck }) => {
   const [pickedNums, setPickedNums] = useState([]);
@@ -71,9 +72,7 @@ export const Field = ({deck, setDeck }) => {
     <div className='field'>
       <Deck deck={deck} />
 
-      <div className='btn' onClick={handlePickRandom}>
-        Pick 5 random cards
-      </div>
+      <Button onClick={handlePickRandom} text={'Pick 5 random cards'}/>
     </div>
   )
 }

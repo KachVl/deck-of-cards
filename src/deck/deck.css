@@ -11,4 +11,5 @@
   background-image: url(../icons/cardBack.svg);
   background-size: contain;
   position: absolute;
+  z-index: 1;
 }
